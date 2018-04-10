@@ -1,0 +1,7 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# https://github.com/github/gitignore/blob/master/Node.gitignore
+
+.DS_Store
+
+npm-debug.log*
+node_modules/

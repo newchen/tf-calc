@@ -1,0 +1,32 @@
+{
+  "name": "tf-calc",
+  "version": "1.0.3",
+  "description": "JS浮点运算",
+  "main": "./dist/index.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mini": "webpack",
+    "unmini": "webpack",
+    "build": "npm run mini && npm run unmini",
+    "postpublish": "git add . && git commit -m \"$npm_package_version\" && git push -u origin master"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/newchen/tf-calc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/newchen/tf-calc/issues"
+  },
+  "homepage": "https://github.com/newchen/tf-calc",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
