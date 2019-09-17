@@ -1,14 +1,14 @@
 {
   "name": "tf-calc",
-  "version": "1.0.3",
-  "description": "JS浮点运算",
+  "version": "1.0.4",
+  "description": "JS浮点运算以及toFixed重写",
   "main": "./dist/index.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mini": "webpack",
     "unmini": "webpack",
     "build": "npm run mini && npm run unmini",
-    "postpublish": "git add . && git commit -m \"$npm_package_version\" && git push -u origin master"
+    "postpublish": "git add . && git commit -m \"$npm_package_version\" && git push origin master"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
