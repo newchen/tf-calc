@@ -1,6 +1,6 @@
 {
   "name": "tf-calc",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JS浮点运算以及toFixed重写",
   "main": "./dist/index.min.js",
   "scripts": {

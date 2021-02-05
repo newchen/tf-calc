@@ -278,12 +278,13 @@ Number.prototype.toFixed = function (len) {
   snum = intNum + '.' + deciNum.substr(0, len);
 
   if (parseInt(nextNum, 10) >= 5) {
-    // 精度的下一位数字大于5，要进位
+    // 精度的下一位数字大于等于5，要进位
     var times = Math.pow(10, len); //需要放大的倍数
     var changedInt = Number(snum.replace('.', '')); //截取后转为整数
     changedInt++; //整数进位
     changedInt /= times; //整数转为小数，注：有可能还是整数
-    snum = padNum(changedInt + '', len, arr);
+    // snum = padNum(changedInt + '', len, arr);
+    snum = changedInt + '';
   }
 
   return snum;
